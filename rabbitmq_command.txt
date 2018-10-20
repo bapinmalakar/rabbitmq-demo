@@ -1,0 +1,5 @@
+Use of Rabbitmq-admin
+	1. Install python and set path in env variable
+	2. Browse http://localhost:15672/cli/index.html to download Rabbitmq-Admin.
+Strat Rabbitmq
+	rabbitmq-server start
