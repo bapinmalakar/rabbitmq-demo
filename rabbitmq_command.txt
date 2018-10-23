@@ -1,5 +1,19 @@
 Use of Rabbitmq-admin
 	1. Install python and set path in env variable
 	2. Browse http://localhost:15672/cli/index.html to download Rabbitmq-Admin.
-Strat Rabbitmq
-	rabbitmq-server start
+	3. python.exe rabbitmqadmin --help // to list all command
+	4. python.exe rabbitmqadmin help subcommands // list all sub command
+	5. python.exe rabbitmqadmin list queues // lisiting all queues
+	6. python.exe rabbitmqadmin list connections // lisiting all  coonections
+	7. python.exe rabbitmqadmin list exchanges // listing all exchanges
+	8. python.exe rabbitmqadmin declare exchange name="cmd_exchnag" type="topic" // create exchange
+	9. python.exe rabbitmqadmin delete exchange name="topic_exchnage" // delete exchnage
+	10. For queues also same
+	11. Get details of a queue python.exe rabbitmqadmin get queue="name" // name, number of message, exchange, payload, payload_bytes, payload_encode
+	12. Get details of your rabbitmq: python.exe rabbitmqadmin show overview
+Rabbitmq
+	1. Start Rabbitmq server: rabbitmq-service start
+	2. Stop Rabbitmq server: rabbitmq-service stop
+	3. Reset Rabbitmq server: rabbitmq-service reset
+	4. rabbitmq-plugins enable rabbitmq_management // enable all plugin after reset or first time
+	5. Rabbitmq generaly run on port 15672
